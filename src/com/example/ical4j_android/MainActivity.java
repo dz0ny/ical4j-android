@@ -1,14 +1,18 @@
 package com.example.ical4j_android;
 
+import net.fortuna.ical4j.data.CalendarBuilder;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
+
+	private static final String tag = "MainActivity";
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,10 @@ public class MainActivity extends Activity {
 
 			}
 		});
+		Log.d(tag,"WTF A");
+		CalendarBuilder b = new CalendarBuilder(); // <-- tle se usuje
+
+		Log.d(tag,"WTF B");
 	}
 
 	@Override

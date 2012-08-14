@@ -4,18 +4,21 @@ import net.fortuna.ical4j.data.CalendarBuilder;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
+import android.util.Log;
 
 
 public class MoodleSyncAdapterService extends Service {
 	
+	private static final String tag = "MoodleSyncAdapterService";
+
 	@Override
 	public void onCreate() {
 
 		super.onCreate();
-		System.out.println("WTF A");
+		Log.d(tag,"WTF A");
 		CalendarBuilder b = new CalendarBuilder(); // <-- tle se usuje
 
-		System.out.println("WTF B");
+		Log.d(tag,"WTF B");
 	}
  
 	@Override
